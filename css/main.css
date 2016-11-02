@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Lovelo";
+  src: url("../fonts/Lovelo Black.otf");
+ }
+
+.cuadrado{
+	width: 50%;
+	height: 330px;
+	display: inline-block;
+}
+
+
+/*Arriba amarillo--*/
+.izquierdo{
+	background-color: #ffe70b ;
+	position: relative;
+}
+.izquierdo h1{
+	font-family: 'Lovelo';
+	font-size: 3em;
+	position: absolute;
+	top: 2%;
+	left: 5%;
+}
+
+
+/*Arriba rojo--*/
+.derecho{
+	float: right;
+	background-color: #ea1f1f;
+	margin-left: ;
+	width: 50%;
+	position: relative;
+
+}
+.derecho h1{
+	font-family: 'Lovelo';
+	font-size: 3em;
+	position: absolute;
+	top: 2%;
+	right: 5%;
+	color: white;
+	text-align: right;
+}
+
+/*Abajo-izquierdo amarillo---------*/
+.about-link{
+	color: black;
+}
+.abajo-izquierdo{
+	background-color: #f1c40f;
+	margin-top: -5px;
+	height: 345px;
+	position: relative;
+	overflow: hidden;
+	transition: background-color .75s ease-out; 
+}
+.abajo-izquierdo h1{
+	font-family: 'Lovelo';
+	font-size: 3em;
+	position: absolute;
+	bottom: 35%;
+	left: 10%;
+	text-align: center;
+}
+.abajo-izquierdo img{
+	position: absolute;
+	max-width: 50%;
+	right: 5%;
+	transition: transform .5s ease-out;
+
+}
+
+/*Abajo-derecho rojo---------*/
+.abajo-derecho{
+	float: right;
+	background-color: #c0392b;
+	margin-left: ;
+	width: 50%;
+	margin-top: -5px;
+	height: 345px;
+	position: relative;
+	overflow: hidden;
+	transition: background-color .75s ease-out; 
+
+}
+.abajo-derecho h1{
+	font-family: 'Lovelo';
+	font-size: 3em;
+	position: absolute;
+	bottom: 35%;
+	right: 10%;
+	text-align: center;
+	color: white;
+}
+.abajo-derecho img{
+	position: absolute;
+	max-width: 80%;
+	left: -40%;
+	bottom: 0;
+	transition: transform .5s ease-out;
+
+}
+
+/*-----Media Queries*/
+@media (max-width: 480px){
+	.cuadrado{
+	width: 100%;
+	height: 330px;
+	margin-top: -5px;
+	}
+	.abajo-derecho img{
+		max-width: 100%;
+	}
+}
