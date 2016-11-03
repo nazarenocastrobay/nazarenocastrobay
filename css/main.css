@@ -102,6 +102,132 @@
 
 }
 
+
+/*--------ABOUT ME--------
+-------------------------*/
+
+/*---hedader---*/
+header{
+	height: 200px;
+	width: 100%;
+	background-color: #22313F;
+	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+}
+header h1{
+	font-family: 'Lovelo';
+	font-size: 3em;
+	position: absolute;
+	bottom: 20%;
+	left: 25%;
+	text-align: center;
+	color: white;
+
+}
+header img{
+	position: absolute;
+	max-width: 10%;
+	right: 30%;
+}
+/*----contenido---*/
+/*----video------*/
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*----textos--*/
+.contenido-quien,
+.contenedor-treehouse{
+	width: 50%;
+	margin: 2em auto 1em auto;
+}
+.contenido-quien{
+	padding-bottom: 2em;
+}
+.contenido-quien h2,
+.contenedor-treehouse h2{
+	font-family: 'Lovelo';
+	font-size: 3em;
+	text-align: center;
+	color: black;
+}
+.contenido-quien p,
+.contenedor-treehouse p{
+	font-family: arial;
+	font-size: 1.2em;
+	text-align: center;
+	color: black;
+	font-family: 'Lato';
+}
+.contenedor-treehouse a{
+	color: #26A65B;
+	text-decoration: none;
+}
+#treehouse{
+	max-width: 35%;
+	display: block;
+	margin: 0 auto;
+	}
+.gris{
+	background-color: #ECF0F1;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-top: 1em;
+}
+/**contacto*/
+.contenido-quien a{
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Lovelo';
+	color: black;
+	border-bottom: 5px solid black;
+}
+.contactame{
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Lovelo';
+	color: black;
+	padding-top: 2em;
+	padding-bottom: 1em;
+
+}
+/****Footer****/
+
+footer{
+	height: 120px;
+	width: 100%;
+	background-color: #121b25;
+	border-bottom: yellow solid 3px;
+	padding-top: 2em;
+
+}
+footer ul{
+	display: flex;
+	justify-content: center;
+}
+footer ul h2{
+	font-family: 'Lovelo';
+	font-size: 1.2em;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	align-items: center;
+}
+footer ul h2:nth-child(odd){
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
 /*-----Media Queries*/
 @media (max-width: 480px){
 	.cuadrado{
@@ -111,5 +237,21 @@
 	}
 	.abajo-derecho img{
 		max-width: 100%;
+	}
+	.contenido-quien,
+	.contenedor-treehouse{
+	width: 100%;
+	margin-top: 0;
+	}
+	.contenido-quien p{
+	width: 95%;
+	}
+	#treehouse{
+		max-width: 40%;
+	}
+	header img{
+	position: absolute;
+	max-width: 40%;
+	right: -25%;
 	}
 }
